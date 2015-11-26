@@ -481,6 +481,11 @@ uint64_t uv_hrtime(void) {
   return uv__hrtime(UV__NANOSEC);
 }
 
+uint64_t uv_hrtime_fast(void) {
+  uv__once_init();
+  return uv__hrtime(UV__NANOSEC);
+}
+
 uint64_t uv__hrtime(double scale) {
   LARGE_INTEGER counter;
 

@@ -1369,6 +1369,7 @@ UV_EXTERN uint64_t uv_get_free_memory(void);
 UV_EXTERN uint64_t uv_get_total_memory(void);
 
 UV_EXTERN uint64_t uv_hrtime(void);
+UV_EXTERN uint64_t uv_hrtime_fast(void);
 
 UV_EXTERN void uv_disable_stdio_inheritance(void);
 

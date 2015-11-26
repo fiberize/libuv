@@ -91,6 +91,9 @@ uint64_t uv_hrtime(void) {
   return uv__hrtime(UV_CLOCK_PRECISE);
 }
 
+uint64_t uv_hrtime_fast(void) {
+  return uv__hrtime(UV_CLOCK_FAST);
+}
 
 void uv_close(uv_handle_t* handle, uv_close_cb close_cb) {
   assert(!(handle->flags & (UV_CLOSING | UV_CLOSED)));
