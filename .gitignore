@@ -73,3 +73,7 @@ ipch
 
 # make dist output
 libuv-*.tar.*
+
+# kdevelop
+.kdev4/
+*.kdev4
